@@ -1,0 +1,98 @@
+body {
+    /* para o background começar no início da pág (esquerda) */
+    margin: 0;
+    background-color: rgb(246, 255, 241);
+}
+
+h1 {
+    color: white;
+    background-color: rgb(3, 69, 71);
+    /* largura */
+    width: 1950px; 
+    /* altura */
+    height: 40px;
+    font-family: "Arial";
+    /* tamanho da letra */
+    font-size: 20px;
+    /* faz o textinho descer */
+    padding-top: 15px;
+    /* para o background começar no topo da pág */
+    margin: 0 auto;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.coiso p {
+    font-style: italic;
+    position: absolute;
+    /* em porcentagem os bgl não se mexe na tela */
+    top: 49%;
+    right: 49%;
+}
+
+.coisa p {
+    font-style: italic;
+    position: absolute;
+    top: 94%;
+    right: 49%;
+}
+
+.coisinha p {
+    font-style: italic;
+    position: absolute;
+    top: 139%;
+    right: 49%;
+}
+
+.polaroid {
+    width: 21%;
+    height: 21%;
+    /* espaço de uma foto para outra */
+    margin: 20px;
+    /* borda das imagens */
+    border: 3px solid #2e2e2e;
+    /* padding: 5px; */
+    /* background-color: #ffffff; */
+    /* "faixa" da polaroid */
+    position: relative;
+    /* para as imagens encaixarem certinho e ficar tds do msm tamanho */
+    overflow: hidden;
+  }
+
+  .polaroid img {
+    /* para centralizar a imagem (width e height) + gambiarra pq a borda branca só tava funcionando do lado esquerdo KKK */
+    width: 97%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* margin: 5px; */
+    border: 5px solid white;
+  }
+  
+  .polaroid::before {
+    content: "";
+    /* pro coisinho não se mexer */
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* para a parte de cima ficar no quadrado certinho */
+    width: 100%;
+    /* tamanho da borda de cima */
+    height: 10px;
+    background-color: #ffffff;
+  }
+  
+  .polaroid::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* tamanho da borda de baixo */
+    height: 50px;
+    background-color: #ffffff;
+    display: block;
+  }
